@@ -36,8 +36,7 @@ class Usuario {
 
 //Crear instancia de usuario
 const usuario1 = new Usuario(
-  "Roberto",
-  "Ojeda",
+  "Roberto", "Ojeda",
   [
     {
       nombre: "El señor de las moscas",
