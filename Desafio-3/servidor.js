@@ -15,12 +15,12 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 app.get("/productos", (req, res) => {
-   res.send("Acá debo Listar todos los productos");
-  
+  res.send(getAll);
+    
 });
 
 app.get("/productoRandom", (req, res) => {
-  res.send("Acá debo listar un producto Random");
+  res.send(getById);
 });
 
 app.all('*', (req, res) => {
