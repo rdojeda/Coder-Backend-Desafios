@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
 //Modificar un producto 
 router.put('/:id', (req, res) => {
    const { id } = req.params
-    const { title, price, thubmnail } = req.body
+    const { title, price, thumbnail } = req.body
     if (title && price && thumbnail) {
         _.each(productos, (producto, i) => {
             if (producto.id == id) {
