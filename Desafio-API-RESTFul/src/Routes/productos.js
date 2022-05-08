@@ -64,7 +64,7 @@ router.delete('/:id', (req, res) => {
       productos.splice(i, 1)
       req.json(productos)
     }
-    res.json({'error': `Producto con id ${id} Eliminado`})
+    res.json(404)({'error': 'Producto No encontrado'})
   })
     
 });
