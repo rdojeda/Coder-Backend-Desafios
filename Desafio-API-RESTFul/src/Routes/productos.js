@@ -62,11 +62,9 @@ router.delete('/:id', (req, res) => {
   _.each(productos, (producto, i) => {
     if (producto.id == id) {
       productos.splice(i, 1)
-      req.json(productos)
     }
-    res.json(404)({'error': 'Producto No encontrado'})
   })
-    
-});
+  res.send(productos)
+ });
 
 module.exports = router
