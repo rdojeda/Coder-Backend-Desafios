@@ -47,7 +47,7 @@ router.put('/:id', (req, res) => {
             if (producto.id == id) {
                 producto.title = title
                 producto.price = price
-                producto.thubmnail = thubmnail
+                producto.thumbnail = thubmnail
             }
         })
         req.json(productos)
